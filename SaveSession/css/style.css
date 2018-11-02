@@ -1,0 +1,201 @@
+/* Map Sessions Widget ... */
+
+#WABSaveSession button {
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: normal;
+    max-width: 46%;
+}
+
+#WABSaveSession .dijitTextBox {
+    font-size: 14px;
+    line-height: normal;
+}
+
+#WABSaveSession #widget_session-name-input {
+    width: 100%;
+}
+
+#WABSaveSession #load-file-panel {
+    padding-bottom: 16px;
+}
+
+div.jimu-widget-savesession .textbox {
+    width: 250px;
+}
+
+div.jimu-widget-savesession .form-control {
+    padding: 5px 0;
+}
+
+/* JW - BEGIN: GeoBase styles */
+div.jimu-widget-savesession .jimu-icon {
+    margin-left: 5px;
+    /*margin-right: 5px;*/
+}
+
+div.normal-text-div {
+    cursor: pointer !important;
+}
+
+.jimu-float-leading {
+    float: right;
+}
+
+/* JW - END: GeoBase styles */
+
+.jimu-icon-load {
+    background-position: -0px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-load.jimu-state-disabled {
+    background-position: -63px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-load.jimu-state-hover {
+    background-position: -21px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-load:hover {
+    background-position: -21px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+.jimu-icon-download {
+    background-image: url("../images/download_icon.png");
+    width: 15px;
+    height: 16px;
+}
+
+.jimu-icon-download.jimu-state-disabled {
+    background-image: url("../images/download_icon.png");
+    width: 15px;
+    height: 16px;
+}
+
+.jimu-icon-download.jimu-state-hover,
+.jimu-icon-download:hover {
+    background-image: url("../images/download_icon_hover.png");
+    width: 15px;
+    height: 16px;
+}
+
+div.jimu-widget-savesession .input-text {
+    display: inline;
+    color: silver;
+}
+
+.jimu-widget-savesession .help-text {
+    color: silver;
+}
+
+.jimu-widget-savesession a.link-btn:visited,
+.jimu-widget-savesession a.link-btn {
+    padding: 10px;
+    color: #518dca;
+}
+
+.jimu-widget-savesession a.link-btn:hover {
+    color: blue;
+}
+
+.jimu-widget-savesession a.link-btn.jimu-state-disabled:visited,
+.jimu-widget-savesession a.link-btn.jimu-state-disabled:hover,
+.jimu-widget-savesession a.link-btn.jimu-state-disabled {
+    padding: 10px;
+    color: gray;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.jimu-widget-savesession #widget_session-name-input {
+    max-width: 75% !important;
+}
+
+.jimu-widget-savesession #session-name-input {
+    padding: 4px 0 !important;
+}
+
+.jimu-widget-savesession .addSession:before {
+    /*font-family: FontAwesome;
+    content: "\f055";
+    margin-right: 6px;*/
+    content: "\00a0\00a0\00a0\00a0";
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-image: url(sprite.svg);
+    width: 14px;
+    height: 16px;
+    background-position: -160px -160px;
+    filter: brightness(10);
+}
+
+.jimu-widget-savesession .exportFile:before {
+    /*font-family: FontAwesome;
+    content: "\f019";
+    margin-right: 6px;*/
+    content: "\00a0\00a0\00a0\00a0";
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-image: url(sprite.svg);
+    width: 15px;
+    height: 16px;
+    background-position: -384px -32px;
+    filter: brightness(10);
+}
+
+.jimu-widget-savesession .importFile:before {
+    /*font-family: FontAwesome;
+    content: "\f093";
+    margin-right: 6px;*/
+    content: "\00a0\00a0\00a0\00a0";
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-image: url(sprite.svg);
+    width: 15px;
+    height: 16px;
+    background-position: -416px -256px;
+    filter: brightness(10);
+}
+
+.jimu-widget-savesession #load-file-panel {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jimu-widget-savesession #save-panel {
+    padding: 4px;
+}
+
+.jimu-widget-savesession h3 {
+    margin: 6px 0;
+}
+
+.jimu-widget-savesession .hr {
+    border-bottom: 2px solid rgb(211, 211, 211);
+    margin: 5px 0 10px 0;
+}
+
+.jimu-widget-savesession .questionIcon {
+    cursor: pointer;
+}
+
+.betaFeature {
+  font-size: smaller;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #ff3300;
+  border-radius: 3px;
+  padding: 0 8px 0 4px;
+  margin: 0 4px;
+  cursor: help;
+}

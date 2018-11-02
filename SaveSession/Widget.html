@@ -1,0 +1,50 @@
+<div>
+    <h3>Saved Sessions</h3>
+    <div id="saved-sessions-panel" data-dojo-attach-point="savedSessionContainer"></div>
+    <div id="load-file-panel">
+        <button class="jimu-btn exportFile" data-dojo-attach-point="loadFromFileButton" data-dojo-attach-event="onclick:onLoadFromFileButtonClicked" title="Load saved session(s) from a file">Import Sessions</button>
+        <button class="jimu-btn importFile" data-dojo-attach-point="saveToFileButton" data-dojo-attach-event="onclick:onSaveToFileButtonClicked" title="Export saved session(s) to a file">Export Sessions</button>
+    </div>
+    <div style='clear:both;'></div>
+
+    <div class="hr"></div>
+
+    <h3>Add Session</h3>
+    <div id="save-panel" data-dojo-attach-point="savePanel">
+        <div class="form-control">
+            <input type="text" id="session-name-input" data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="sessionNameTextBox" data-dojo-props="trim:true,required:true,value:'',placeholder:'Enter the name for the session',class:'searchText'" class="textbox" /></input>
+            <button class="jimu-btn addSession" type="button" data-dojo-attach-point="saveButton" data-dojo-attach-event="onclick:onSaveButtonClicked">Add</button>
+        </div>
+        <div class="input-text" data-dojo-attach-point="inputText"></div>
+        <div class="help-text">Add a saved session for the current map settings: i.e. extent, visible layer, graphics, etc. </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="startup-sessions-panel" data-dojo-attach-point="startupSessionContainer">
+        <h3>Startup Sessions <span class="betaFeature" title="Start your viewer session where you left by selecting the Restore Last Session option.">*BETA</span></h3>
+        <div class="form-control">
+            <form data-dojo-attach-point="saveMapSessionForm" data-dojo-type="dijit/form/Form">
+                <div style="padding: 4px;">
+                    <input type="radio" name="startup-sessions" id="restored" value="restored" data-dojo-attach-point="restoreSessionOpt" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-event="onClick:enableRestoredSessions" />
+                    <label for="radioOne">Restore Last Session</label>
+                    <span class="questionIcon fa fa-question-circle" data-dojo-attach-point="helpRestoreSessionNode"></span>
+                </div>
+                <div style="padding: 4px;">
+                    <input type="radio" name="startup-sessions" id="defaults" value="defaults" data-dojo-attach-point="newSessionOpt" checked data-dojo-type="dijit/form/RadioButton" data-dojo-attach-event="onClick:disableRestoredSessions" />
+                    <label for="radioTwo">New Session</label>
+                    <span class="questionIcon fa fa-question-circle" data-dojo-attach-point="helpNewSessionNode"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- hidden form to return file to save -->
+    <!-- clientside download is not supported in all browsers http://caniuse.com/#search=download -->
+    <form action="" method="post" style="display:none" data-dojo-attach-point="saveToFileForm">
+        <input type="hidden" name="filename" value="" data-dojo-attach-point="saveToFileName">
+        <input type="hidden" name="content" value="" data-dojo-attach-point="saveToFileContent">
+    </form>
+    <!-- JW - add hidden anchor to return individual session files -->
+    <a href="" download="download.json" style="display:none" data-dojo-attach-point="saveTplFileButton"></a>
+</div>
